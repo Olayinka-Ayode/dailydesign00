@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+*::before, *::after {
+    box-sizing: border-box;
+}
 
 body {
     display: flex;
@@ -41,6 +44,11 @@ body {
     font-weight: 500;
 }
 
-.option {
-    padding: 30px;
+select {
+    max-height: calc(1.2em + 24px);
+    height: calc(1.2em + 24px);
+}
+
+select option {
+    padding-bottom: 40px;
 }
